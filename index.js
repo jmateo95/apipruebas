@@ -37,4 +37,9 @@ app.get('/', (req, res) => res.send('Hello World!'));
 
 app.get('/hola', (req, res) => res.send(respone));
 
+// Endpoint to Get a list of users
+app.get('/getUsers', function(req, res){
+    res.send(respone)
+})
+
 app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
