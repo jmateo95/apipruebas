@@ -42,10 +42,8 @@ app.get('/getUsers', function(req, res){
     res.send(respone)
 })
 
-app.post('/rates', function(req, res){
-    //Step 2: read existing users
-    console.log(req);
-    res.send(data);
-})
+app.post('/test', (req, res) => {
+    res.json({requestBody: req.body})  // <==== req.body will be a parsed JSON object
+  })
 
 app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
