@@ -42,4 +42,10 @@ app.get('/getUsers', function(req, res){
     res.send(respone)
 })
 
+app.post('/rates', function(req, res){
+    //Step 2: read existing users
+    console.log(req);
+    res.send(data);
+})
+
 app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
