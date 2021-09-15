@@ -43,7 +43,7 @@ app.get('/getUsers', function(req, res){
 })
 
 app.post('/test', (req, res) => {
-    res.json({respone})  // <==== req.body will be a parsed JSON object
+    res.json(respone)  // <==== req.body will be a parsed JSON object
   })
 
 app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
